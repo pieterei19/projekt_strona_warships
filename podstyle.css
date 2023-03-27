@@ -41,6 +41,9 @@ aside {
   display: flex;
   /* flex-basis: 50%; */
 }
+img {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
 figure {
   width: 50%;
 }
