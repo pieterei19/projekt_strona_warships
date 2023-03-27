@@ -50,3 +50,8 @@ figure > img {
 .historia_okrety > p {
   width: 50%;
 }
+
+img:hover {
+  box-shadow: 3px 3px black;
+  transform: scale(1.1);
+}
