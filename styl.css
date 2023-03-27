@@ -41,3 +41,6 @@ img {
 footer > figure {
   width: 33%;
 }
+figure {
+    box-shadow: 0 0 10px 1px black;
+}
