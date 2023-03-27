@@ -41,7 +41,7 @@ img {
 footer > figure {
   width: 33%;
 }
-figure:hover {
+img:hover {
   box-shadow: 3px 3px black;
   transform: scale(1.1);
 }
