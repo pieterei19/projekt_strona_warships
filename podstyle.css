@@ -1,22 +1,23 @@
 header {
-  grid-area: header;
   text-align: center;
   background-color: #72a1e5;
 }
+
 main {
-  grid-area: main;
   background-color: #5c73f2;
   text-align: justify;
+  max-width: 50%;
 }
+
 footer {
-  grid-area: footer;
   display: flex;
   justify-content: center;
   background-color: #102bc2;
   color: antiquewhite;
+  width: 100%;
 }
+
 aside {
-  grid-area: aside;
   color: aliceblue;
   background-color: #273270;
   display: flex;
@@ -25,31 +26,32 @@ aside {
   padding: 0;
   margin: 0;
   list-style: none;
+  width: 50%;
+  float: right;
 }
+
 .container {
-  color: #fffdd0;
-  display: grid;
-  align-content: space-around;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
-  grid-template-areas:
-    'header header'
-    'main aside'
-    'footer footer';
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
+
 .historia_okrety {
   display: flex;
-  /* flex-basis: 50%; */
 }
+
 img {
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
+
 figure {
-  width: 50%;
+  width: 100%;
 }
+
 figure > img {
   width: 100%;
 }
+
 .historia_okrety > p {
   width: 50%;
 }
@@ -58,17 +60,85 @@ img:hover {
   box-shadow: 3px 3px black;
   transform: scale(1.2);
 }
+
 @media screen and (max-width: 600px) {
-  .container {
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      'header'
-      'main'
-      'aside'
-      'footer';
+  aside {
+    width: 100%;
   }
 
+  main {
+    max-width: 100%;
+  }
+}
+header {
+  text-align: center;
+  background-color: #72a1e5;
+}
+
+main {
+  background-color: #5c73f2;
+  text-align: justify;
+  max-width: 50%;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: #102bc2;
+  color: antiquewhite;
+  width: 100%;
+}
+
+aside {
+  color: aliceblue;
+  background-color: #273270;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  width: 50%;
+  float: right;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.historia_okrety {
+  display: flex;
+}
+
+img {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+figure {
+  width: 100%;
+}
+
+figure > img {
+  width: 100%;
+}
+
+.historia_okrety > p {
+  width: 50%;
+}
+
+img:hover {
+  box-shadow: 3px 3px black;
+  transform: scale(1.2);
+}
+
+@media screen and (max-width: 600px) {
   aside {
-    grid-column: 1;
+    width: 100%;
+  }
+
+  main {
+    max-width: 100%;
   }
 }
