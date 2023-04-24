@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: #102031;
 }
 header {
   text-align: center;
@@ -14,6 +15,9 @@ main {
   background-color: #5c73f2;
   text-align: justify;
   padding: 2em;
+  width: 70%;
+  float: left;
+  color: aliceblue;
 }
 
 footer {
@@ -33,7 +37,8 @@ aside {
   padding: 0;
   margin: 0;
   list-style: none;
-  width: 40%;
+  width: 30%;
+  float: right;
 }
 
 .container {
