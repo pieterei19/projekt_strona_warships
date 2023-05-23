@@ -9,6 +9,7 @@
 header {
   text-align: center;
   background-color: #72a1e5;
+  color: azure;
 }
 
 main {
@@ -75,4 +76,7 @@ img:hover {
   main {
     max-width: 100%;
   }
+}
+main >  div > h2  {
+  text-align: center;
 }
